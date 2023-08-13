@@ -1,0 +1,153 @@
+
+<html>
+    <head>
+
+    </head>
+    <body>
+    <section class="container">
+        <div class="accordion">
+            <h2 class="title ">Accordion</h2>
+            <article class="accordion-panel">
+                <input id="accordion-question0" name="accordion" type="radio" checked />
+                <label for="accordion-question0">
+                    What is Lorem Ipsum?
+                    <i class="ri-add-line open">+</i>
+                    <i class="ri-subtract-line close">-</i>
+                </label>
+                <div class="accordion-body">
+                    <p class="accordion-answer">Dummy text is text that is used in the publishing industry or by web designers to occupy the space which will later be filled with 'real' content. This is required when, for example, the final text is not yet available. Dummy text is also known as 'fill text'. It is said that song composers of the past used dummy texts as lyrics when writing melodies in order to have a 'ready-made' text to sing with the melody. Dummy texts have been in use by typesetters since the 16th century.</p>
+                </div>
+            </article>
+            <article class="accordion-panel">
+                <input id="accordion-question1" name="accordion" type="radio" checked />
+                <label for="accordion-question1">
+                    Where can I get some?
+                    <i class="ri-add-line open">+</i>
+                    <i class="ri-subtract-line close">-</i>
+                </label>
+                <div class="accordion-body">
+                    <p class="accordion-answer">Dummy text is text that is used in the publishing industry or by web designers to occupy the space which will later be filled with 'real' content. This is required when, for example, the final text is not yet available. Dummy text is also known as 'fill text'. It is said that song composers of the past used dummy texts as lyrics when writing melodies in order to have a 'ready-made' text to sing with the melody. Dummy texts have been in use by typesetters since the 16th century.</p>
+                </div>
+            </article>
+
+            <article class="accordion-panel">
+                <input id="accordion-question2" name="accordion" type="radio" checked />
+                <label for="accordion-question2">
+                    Where can I get some?
+                    <i class="ri-add-line open">+</i>
+                    <i class="ri-subtract-line close">-</i>
+                </label>
+                <div class="accordion-body">
+                    <p class="accordion-answer">Dummy text is text that is used in the publishing industry or by web designers to occupy the space which will later be filled with 'real' content. This is required when, for example, the final text is not yet available. Dummy text is also known as 'fill text'. It is said that song composers of the past used dummy texts as lyrics when writing melodies in order to have a 'ready-made' text to sing with the melody. Dummy texts have been in use by typesetters since the 16th century.</p>
+                </div>
+            </article>
+
+            <article class="accordion-panel">
+                <input id="accordion-question3" name="accordion" type="radio" checked />
+                <label for="accordion-question3">
+                    Where can I get some?
+                    <i class="ri-add-line open">+</i>
+                    <i class="ri-subtract-line close">-</i>
+                </label>
+                <div class="accordion-body">
+                    <p class="accordion-answer">Dummy text is text that is used in the publishing industry or by web designers to occupy the space which will later be filled with 'real' content. This is required when, for example, the final text is not yet available. Dummy text is also known as 'fill text'. It is said that song composers of the past used dummy texts as lyrics when writing melodies in order to have a 'ready-made' text to sing with the melody. Dummy texts have been in use by typesetters since the 16th century.</p>
+                </div>
+            </article>
+
+            <article class="accordion-panel">
+                <input id="accordion-question4" name="accordion" type="radio" checked />
+                <label for="accordion-question4">
+                    Where can I get some?
+                    <i class="ri-add-line open">+</i>
+                    <i class="ri-subtract-line close">-</i>
+                </label>
+                <div class="accordion-body">
+                    <p class="accordion-answer">Dummy text is text that is used in the publishing industry or by web designers to occupy the space which will later be filled with 'real' content. This is required when, for example, the final text is not yet available. Dummy text is also known as 'fill text'. It is said that song composers of the past used dummy texts as lyrics when writing melodies in order to have a 'ready-made' text to sing with the melody. Dummy texts have been in use by typesetters since the 16th century.</p>
+                </div>
+            </article>
+
+            <!-- Copy past the tag <article> </article> for multiple accordion -->
+        </div>
+    </section>
+    </body>
+</html>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background-color: #090909;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+    .container {
+        max-width: 980px;
+        margin-inline: auto;
+        padding: 100px 15px;
+    }
+    .title {
+        font-size: clamp(26px, 5vw, 40px);
+        color: #ffb703;
+        margin-bottom: 30px;
+    }
+    .accordion-panel {
+        margin-bottom: 10px;
+        border: 1px solid #999;
+        border-radius: 8px;
+        padding: 7px 21px;
+    }
+    .accordion input {
+        display: none;
+    }
+    .accordion label {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 15px;
+        padding-block: 7px;
+        color: #f4f5f6;
+        cursor: pointer;
+        transition: color 0.25s;
+    }
+    .accordion label:hover,
+    .accordion input:checked+label {
+        color: #ffb703;
+    }
+    .accordion i {
+        color: #ffb703;
+    }
+    .accordion .close {
+        display: none;
+    }
+    .accordion input:checked+label .close {
+        display: block;
+    }
+    .accordion input:checked+label .open {
+        display: none;
+    }
+    .accordion-body {
+        height: 0;
+        overflow: hidden;
+        transition: height 0.25 ease-in-out;
+    }
+    .accordion-answer {
+        font-size: 14px;
+        color: #c7c7c7;
+        padding-top: 5px;
+        padding-bottom: 7px;
+        opacity: 0;
+        text-align: justify;
+        transform: scale(0);
+        transform-origin: top left;
+        transition: opacity 0.75s, transform 0.15s;
+    }
+    .accordion input:checked~.accordion-body {
+        height: max-content;
+    }
+    .accordion input:checked~.accordion-body .accordion-answer {
+        opacity: 1;
+        transform: scale(1);
+    }
+</style>
