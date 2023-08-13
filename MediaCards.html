@@ -1,0 +1,134 @@
+<head>
+    <title>Add Cards</title>
+</head>
+<body>
+    <div class="container">
+        <div class="cards">
+            <div class="card twitter">
+                <h2 class="card-title-large">Twitter</h2>
+                <h3 class="card-title-small">Twitter</h3>
+                <p class="card-discription">Your twitter link or URL:</p>
+                <a href="#" class="card-cty">&rarr;</a>
+            </div>
+            <div class="card instagram">
+                <h2 class="card-title-large">Instagram</h2>
+                <h3 class="card-title-small">Instagram</h3>
+                <p class="card-discription">Your instagram link or URL:</p>
+                <a href="#" class="card-cty">&rarr;</a>
+            </div>
+            <div class="card Meta">
+                <h2 class="card-title-large">Meta</h2>
+                <h3 class="card-title-small">Meta</h3>
+                <p class="card-discription">Your Meta link or URL:</p>
+                <a href="#" class="card-cty">&rarr;</a>
+            </div>
+            <div class="card youtube">
+                <h2 class="card-title-large">Youtube</h2>
+                <h3 class="card-title-small">Youtube</h3>
+                <p class="card-discription">Your youtube link or URL:</p>
+                <a href="#" class="card-cty">&rarr;</a>
+            </div>
+            <div class="card linkedin">
+                <h2 class="card-title-large">LinkedIn</h2>
+                <h3 class="card-title-small">LinkedIn</h3>
+                <p class="card-discription">Your linkedin link or URL:</p>
+                <a href="#" class="card-cty">&rarr;</a>
+            </div>
+            <div class="card github">
+                <h2 class="card-title-large">Github</h2>
+                <h3 class="card-title-small">Github</h3>
+                <p class="card-discription">Your github link or URL:</p>
+                <a href="#" class="card-cty">&rarr;</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+<style>
+    .container {
+        max-width: 110rem;
+        padding: 1.5rem;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-gap: 1.5rem;
+    }
+
+    .card {
+        background: #262525;
+        color: #fff;
+        padding: 1rem;
+        overflow: hidden;
+        border-radius: 0.8rem;
+    }
+
+    .card-title-large {
+        font-family: fantasy, sans-serif;
+        font-size: 5rem;
+        letter-spacing: 0.2rem;
+        color: #1d1d1d;
+        transform: translateX(11rem);
+        transition: transform 3.5s;
+    }
+
+    .card-title-small {
+        margin-bottom: 0rem;
+        font-family: fantasy, sans-serif;
+        font-weight: lighter;
+        letter-spacing: 0.1rem;
+    }
+
+    .card-discription {
+        font-size: 0.8rem;
+        line-height: 1.5;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .card-cty {
+        display: inline-block;
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        margin-left: auto;
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.5rem;
+    }
+
+    .card:hover .card-cty {
+        background-color: #262525;
+    }
+
+    .card:hover .card-title-large {
+        transform: translateX(-115%);
+        color: #fff;
+    }
+
+    .card.twitter:hover {
+        background-color: #1da1f2;
+    }
+
+    .card.instagram:hover {
+        background: radial-gradient(at 20% 128%, #feda78 20%, #e23467 60%, #ac2bbc 90%);
+    }
+
+    .card.Meta:hover {
+        background-color: #4267b2;
+    }
+
+    .card.youtube:hover {
+        background-color: #CD201F;
+    }
+
+    .card.linkedin:hover {
+        background-color: #0A66C2;
+    }
+
+    .card.github:hover {
+        background-color: #171515;
+    }
+</style>
